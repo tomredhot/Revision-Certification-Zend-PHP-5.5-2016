@@ -12,9 +12,11 @@
 
         <h1>1.Base PHP</h1>
         <h3>1.Configuration</h3>
+        <br />
         <h4>Principe</h4>
         <p>Le fichier de configuration PHP sur un serveur se nomme <b>php.ini</b>.<br />
         	Il contient différentes directives sur le comportement du language. Lors du chargement de PHP ce fichier est cherché à différent endroit (peut être donc overidé, notamment par user.ini en FASTCGI et CGI)</p>
+        <br />
         <h4>Gestion des erreurs</h4>
         <p>Voici les différentes valeurs (mixables entres elles) de la directive <b>error_reporting</b></p>
         <table class="table table-striped table-bordered">
@@ -102,7 +104,15 @@
             <code>log_error = on</code> : active les logs<br />
             <code>error_logs = /chemin/error.log</code> chemin vers les logs (syslog pour système de log du serveur)<br />
 
+        </p><br />
+        <h4>Module/Extensions PHP</h4>
+        <p>
+            <code>extension_dir = /usr/local/php/ext/</code> : chemin du dossier contenant les extensions.
+            <code>extension = soap.so</code> : chargement d’une extension (doit être dans extension_dir).
+            <code>zend_extension = "/user/…/xdebug.so"</code> : chargement d'une extension Zend. Chemin absolu obligatoire.
+            <code>./configure –with-curl –with-mhash</code> : en bash installation plugin pendant compilation php.
         </p>
+
 
 
 

@@ -56,6 +56,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Base Php <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="./?chapter=1&page=1">Configuration</a></li>
+                <li><a href="./?chapter=1&page=2">Performances</a></li>
               </ul>
             </li>
           </ul>
