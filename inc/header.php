@@ -57,6 +57,8 @@
               <ul class="dropdown-menu">
                 <li><a href="./?chapter=1&page=1">Configuration</a></li>
                 <li><a href="./?chapter=1&page=2">Performances</a></li>
+                <li><a href="./?chapter=1&page=3">Syntaxes</a></li>
+                <li><a href="./?chapter=1&page=4">Types de données</a></li>
               </ul>
             </li>
           </ul>
