@@ -21,7 +21,7 @@
             <code>output_buffering = on</code> : contre les problemes de content avant la declaration des headers PHP</p>
         <br />
         <h4>Divers</h4>
-        <p>Saut de ligne auorisés au milieu d'une instruction, ex:<br />
+        <p>Saut de ligne autorisés au milieu d'une instruction, ex:<br />
             <code>$a=2; $c<br />=3 </code><br />
             Le dernier ?> peut-être omis<br />
             Commentaires:<br />
