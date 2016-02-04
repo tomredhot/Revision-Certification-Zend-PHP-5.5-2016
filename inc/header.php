@@ -51,14 +51,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./">Accueil</a></li>
-            <li class="dropdown">
+            <li <?php if(!$chapter)echo 'class="active"'; ?>><a href="./">Accueil</a></li>
+            <li <?php if($chapter=='1')echo 'class="active"'; ?> class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Base Php <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="./?chapter=1&page=1">Configuration</a></li>
-                <li><a href="./?chapter=1&page=2">Performances</a></li>
-                <li><a href="./?chapter=1&page=3">Syntaxes</a></li>
-                <li><a href="./?chapter=1&page=4">Types de données</a></li>
+                <li><a href="./?chapter=1&page=1">1.1 Configuration</a></li>
+                <li><a href="./?chapter=1&page=2">1.2 Performances</a></li>
+                <li><a href="./?chapter=1&page=3">1.3 Syntaxes</a></li>
+                <li><a href="./?chapter=1&page=4">1.4 Types de données</a></li>
+                <li><a href="./?chapter=1&page=5">1.5 Variables et constantes</a></li>
               </ul>
             </li>
           </ul>
