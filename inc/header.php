@@ -60,6 +60,7 @@
                 <li><a href="./?chapter=1&page=3">1.3 Syntaxes</a></li>
                 <li><a href="./?chapter=1&page=4">1.4 Types de données</a></li>
                 <li><a href="./?chapter=1&page=5">1.5 Variables et constantes</a></li>
+                <li><a href="./?chapter=1&page=6">1.6 SpaceName</a></li>
               </ul>
             </li>
           </ul>
