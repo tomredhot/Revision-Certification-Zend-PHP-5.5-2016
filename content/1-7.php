@@ -47,7 +47,7 @@
         <b>Transtypage lors de comparaison :</b><br />
         String convertie en leurs valeurs dans la table ASCII<br />
         Bool en 1 ou 0, NULL en string vide<br />
-        Objet ou table > all dans tous les cas.<br />
+        Objet ou table > all dans tous les cas..<br />
 
     </p>
     <br />
