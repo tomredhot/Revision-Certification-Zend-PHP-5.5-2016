@@ -22,11 +22,11 @@
     <title>Revision Certification Zend PHP 5.5</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
    
     <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -61,6 +61,8 @@
                 <li><a href="./?chapter=1&page=4">1.4 Types de données</a></li>
                 <li><a href="./?chapter=1&page=5">1.5 Variables et constantes</a></li>
                 <li><a href="./?chapter=1&page=6">1.6 SpaceName</a></li>
+                <li><a href="./?chapter=1&page=7">1.7 Opérateurs</a></li>
+                <li><a href="./?chapter=1&page=8">1.8 Structure de contrôle</a></li>
               </ul>
             </li>
           </ul>

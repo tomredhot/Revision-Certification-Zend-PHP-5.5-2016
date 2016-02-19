@@ -34,14 +34,21 @@
     <br />
     <h4>Boucle</h4>
     <p>
-        while <code>
+        while : <br /><code>
             while(condition){<br />
                 // do something <br />
-            }</code> Pas de références (alias)<br />
-
+            }</code><br />
+        do ... while : <br /><code>
+            do{ // do something  <br />}
+            while(condition)</code><br />
+        for : <code>
+            for($j=0;$j<3; $j++){ }
+            </code><br />
+        Pour passer une loop : <code>continue;</code><br />
+        Pour stopper une loop : <code>break;</code><br />
     </p>
     <br />
-   
+
 
 
 
