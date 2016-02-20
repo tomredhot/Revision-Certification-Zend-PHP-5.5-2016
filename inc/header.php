@@ -53,19 +53,25 @@
           <ul class="nav navbar-nav">
             <li <?php if(!$chapter)echo 'class="active"'; ?>><a href="./">Accueil</a></li>
             <li <?php if($chapter=='1')echo 'class="active"'; ?> class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Base Php <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="./?chapter=1&page=1">1.1 Configuration</a></li>
-                <li><a href="./?chapter=1&page=2">1.2 Performances</a></li>
-                <li><a href="./?chapter=1&page=3">1.3 Syntaxes</a></li>
-                <li><a href="./?chapter=1&page=4">1.4 Types de données</a></li>
-                <li><a href="./?chapter=1&page=5">1.5 Variables et constantes</a></li>
-                <li><a href="./?chapter=1&page=6">1.6 SpaceName</a></li>
-                <li><a href="./?chapter=1&page=7">1.7 Opérateurs</a></li>
-                <li><a href="./?chapter=1&page=8">1.8 Structure de contrôle</a></li>
-                <li><a href="./?chapter=1&page=9">1.9 Exercices</a></li>
-              </ul>
-            </li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Base Php <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="./?chapter=1&page=1">1.1 Configuration</a></li>
+                      <li><a href="./?chapter=1&page=2">1.2 Performances</a></li>
+                      <li><a href="./?chapter=1&page=3">1.3 Syntaxes</a></li>
+                      <li><a href="./?chapter=1&page=4">1.4 Types de données</a></li>
+                      <li><a href="./?chapter=1&page=5">1.5 Variables et constantes</a></li>
+                      <li><a href="./?chapter=1&page=6">1.6 SpaceName</a></li>
+                      <li><a href="./?chapter=1&page=7">1.7 Opérateurs</a></li>
+                      <li><a href="./?chapter=1&page=8">1.8 Structure de contrôle</a></li>
+                      <li><a href="./?chapter=1&page=9">1.9 Exercices</a></li>
+                  </ul>
+              </li>
+              <li <?php if($chapter=='2')echo 'class="active"'; ?> class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formats & Types de données <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="./?chapter=2&page=1">1.1 XML</a></li>
+                  </ul>
+              </li>
           </ul>
           
         </div><!--/.nav-collapse -->
