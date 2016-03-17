@@ -7,70 +7,24 @@
 ### 2016
 ### WITH BOOTSTRAP (http://getbootstrap.com/)
 ### BASED ON THE BOOK "Préparation à la certification ZCPE" ENI EDITIONS
-*/
-$exemple=htmlentities("<?php $ xml = <<<XML
-<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<livre>
-    <titre>Certification PHP 5.5</titre>
-    <chapitre id=\"3\">
-        <id>3</id>
-        <titre>Formats et types de données</titre>
-        <description>Gestion XML, JSON, Date et heure et
-introduction aux services web REST et SOAP</description>
-    </chapitre>
-</livre>
-XML;
+*/ ?>
+<div class="container">
 
-function debutElement($parseur, $nom, $attributs)
-{
-    echo \"* Début élément : $nom<br/>\";
-    $nbAttributs = count($attributs);
-    echo \"- Nombre d’attributs : $nbAttributs<br />\";
-    if ($nbAttributs > 0) {
-        print_r($attributs);
-        echo ’<br />’;
-    }
-}
-
-function finElement($parseur, $nom)
-{
-   echo \"Fin élément $nom<br/><br/>\";
-}
-
-$parseur = xml_parser_create();
-xml_set_element_handler($parseur, ’debutElement’, ’finElement’);
-echo xml_parse($parseur, $xml, true);
-
-/* Affiche :
-* Début élément : LIVRE
-- Nombre d’attributs : 0
-* Début élément : TITRE
-- Nombre d’attributs : 0
-Fin élément TITRE
-
-* Début élément : CHAPITRE
-- Nombre d’attributs : 1
-Array ( [ID] => 3 )
-* Début élément : ID
-- Nombre d’attributs : 0
-Fin élément ID
-
-* Début élément : TITRE
-- Nombre d’attributs : 0
-Fin élément TITRE
-
-* Début élément : DESCRIPTION
-- Nombre d’attributs : 0
-Fin élément DESCRIPTION
-
-Fin élément CHAPITRE
-
-Fin élément LIVRE
-
-1
-*/");
-?>
-
+    <h1>2.Formats & Types de données</h1>
+    <h3>1.XML</h3>
+    <br />
+    <h4>Définition & extension</h4>
+    <p><b>XML</b> = eXtensible Markup Language
+        <br>extension simple pour lecture et ecriture d'XML : libxml (<code>--enable-libxml</code>, activée par défaut)</p>
+    <br />
+    <h4>Manipulation : XML Parser</h4>
+    <p>Parseur de type SAX (simple Api Xml)<br />
+        <code>$parser=xml_parser_create([$encodage])</code> : retourne la ressource parseur utile pour la suite.
+        <br><code>$parser=xml_parser_create_ns([$encodage],[$separateur])</code> : idem précédents mais avec le support des espace de nom. (le separateur concerne les namespaces)
+        <br><code>xml_set_element_handler($parseur,$functionDebut,$fonctionFin)</code> : post ou pre traitement des elements rencontrés dans le xml
+        <br><code>xml_parse($parseur, $xml, true)</code> : lance le parse en utilisant la ressource $parseur et les fonctions de post et pré traitement defini par xml_set_element_handler.
+        <br><code>xml_get_error_code() et xml_error_string()</code> : pour gerer les erreurs.
+    </p>
 
 
 
